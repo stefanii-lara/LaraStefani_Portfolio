@@ -1,0 +1,35 @@
+* {
+    margin-left: 10px; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* this is a comment */
+body {
+    width: 60%;
+    background-color: rgb(16, 50, 63);
+    color: #E7E6E2;
+    font-size: 16px;
+    font-family: "Castoro";
+}
+
+h1 {
+    font-size: 75px;
+    font-family: "Bodoni Moda SC";
+}
+
+h2, h3, h4 { 
+    font-size: 12;
+    font-family: "Libre Bodoni";
+}
+
+p {
+    font-family: "Libre Bodoni"; 
+    font-size: 18px; 
+    color: #ece4c8; 
+    line-height: 1.5;
+}
+a:hover{
+color: rgb(248, 248, 252)
+
+}
