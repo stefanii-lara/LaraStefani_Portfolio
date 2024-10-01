@@ -1,35 +1,162 @@
-* {
+/* Navigation link styling */
+nav a {
+    color: #FFD700; /* Set the link color (e.g., gold) */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #47ff7e; /* Change to another color on hover (e.g., tomato) */
+    text-decoration: underline; /* Optionally add an underline on hover */
+}* 
+
+{
     margin-left: 10px; 
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-/* this is a comment */
+/* General Page Styling */
 body {
-    width: 60%;
-    background-color: rgb(16, 50, 63);
-    color: #E7E6E2;
+    width: 80%;
+    background-color: #250B3A;
+    color: #B1C543;
     font-size: 16px;
-    font-family: "Castoro";
+    font-family: "Castoro", serif;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
 }
 
 h1 {
     font-size: 75px;
-    font-family: "Bodoni Moda SC";
+    font-family: "Bodoni Moda SC", serif;
 }
 
-h2, h3, h4 { 
-    font-size: 12;
-    font-family: "Libre Bodoni";
+/* Flexbox Layout for Main Content and Sidebar */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
 }
 
+/* Main Content */
+.main-content {
+    width: 70%;
+}
+
+/* Sidebar Styling */
+aside {
+    width: 20%;
+    background-color: #fdfdfd;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Table of Contents Styling */
+h2, h3, h4 {
+    font-size: 16px;
+    font-family: "Libre Bodoni", serif;
+}
+
+/* Paragraph Styling */
 p {
-    font-family: "Libre Bodoni"; 
-    font-size: 18px; 
-    color: #ece4c8; 
+    font-family: "Libre Bodoni", serif;
+    font-size: 18px;
+    color: #B1C543;
     line-height: 1.5;
 }
-a:hover{
-color: rgb(248, 248, 252)
 
+/* Newsletter Styling */
+#newsletter-subscribe form {
+    background-color: #f8f5f5;
+    width: 50%;
+    height: 200%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Related Articles Styles */
+.related-articles {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space out the articles */
+    margin-top: 20px; /* Space above the section */
+}
+
+.related-articles article {
+    background-color: #f9f9f9; /* Optional: background color for articles */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 10px; /* Padding inside each article */
+    text-align: center; /* Center the text */
+    flex: 1; /* Allow articles to grow equally */
+    margin: 0 10px; /* Add margin between articles */
+    transition: box-shadow 0.3s; /* Smooth shadow effect */
+}
+
+.related-articles article:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Shadow effect on hover */
+}
+
+}
+
+.related-articles article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Gallery Styles */
+.gallery {
+    text-align: center; /* Center the text and images */
+    margin: 20px 0; /* Space above and below the gallery section */
+}
+
+.gallery h2 {
+    font-size: 24px; /* Adjust the size of the gallery heading */
+    color: #B1C543; /* Match your theme color */
+}
+
+.gallery p {
+    font-size: 16px; /* Adjust the size of the gallery description */
+    color: #B1C543; /* Match your theme color */
+}
+
+.gallery-images {
+    display: flex; /* Use flexbox to align images */
+    justify-content: center; /* Center the images */
+    flex-wrap: wrap; /* Wrap images to the next line if necessary */
+    gap: 10px; /* Space between images */
+}
+
+.gallery-images img {
+    width: 200px; /* Set a consistent width for the images */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+.gallery-images img {
+    width: 200px; /* Set a consistent width for the images */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+.gallery-images img {
+    width: 200px; /* Set a consistent width for the images */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 5px; /* Optional: add rounded corners */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
 }

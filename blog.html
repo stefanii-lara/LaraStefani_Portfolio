@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lara Stefani Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Castoro:ital@0;1&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Castoro:ital@0;1&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="Assets/styles/styles.css">
 </head>
 <body>
@@ -19,48 +22,90 @@
     </header>
 
     <main>
-        <article>
-            <h2><b>Table of Contents</b></h2>
-            <p>
-                1. Introduction<br>
-                2. Key Features of My Portfolio<br>
-                3. Design Process Behind the Scenes<br>
-                4. How to Get in Touch<br>
-            </p>
-        </article>
-
+        <!-- Container for Main Content and Aside -->
+        <div class="content-container">
+            <!-- Main Content Area -->
+            <section class="main-content">
+                <!-- Table of Contents Article -->
+                <article>
+                    <h2><b>Table of Contents</b></h2>
+                    <p>
+                        1. Introduction<br>
+                        2. Key Features of My Portfolio<br>
+                        3. Design Process Behind the Scenes<br>
+                        4. How to Get in Touch<br>
+                    </p>
+                </article>
+                 <!-- Journey Section -->
+                 <section>
+                    <h2><b>My Journey</b></h2>
+                    <p>1. Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. I'm excited to showcase some of my design work here—ranging from earlier pieces to projects I've been developing recently. My creative journey started with a passion for visual storytelling and design, which has grown as I explored different mediums like photography, graphic design, and web design. I can't wait to share my work wit h you and look forward to connecting with others who are just as passionate about design! .</p>
+                </section>
+        <!-- Key Features of My Portfolio -->
         <section>
-            <h2>Subscribe to my newsletter</h2>
-            <form>
-<label>Enter your email</label><br>
-    <input id="newsletter=" type="email"placeholder email@com.com><br>
-    <button>Subscribe</button>
-
-            </form>
-            <h2><b>My Journey</b></h2>
-            <p>1. Introduction: Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year.</p>
+            <h2><b>Key Features of my Portfolio</b></h2>
+            <p>My portfolio is more than just a collection of my work. It is a carefully curated experience, highlighting my projects in an accessible and engaging way. 
+                <br>Some key features include:<br>
+            </p>
+            1. Gallery: Users can click through a gallery of my projects, with each piece linking to a detailed breakdown of the design process.<br>
+            2. Mobile-Friendly Design: The website is fully responsive and accessible across devices, ensuring a seamless experience whether you’re on a desktop or mobile.<br>
         </section>
-    
-            <section>
-<h2>Related Articles</h2>
-<article>
-    <a href="https://www.designnews.com/">
-        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image"><br>
-        <h4>Here is what is happening in the Design World</h4>
-    </a>
-</article>
-            </section>
+
+  <!-- Gallery Section -->
+<section class="gallery">
+    <h2>Gallery</h2>
+    <p>Curious about how I approach my designs? Every project comes with a unique story, and I have included a behind-the-scenes look at my creative process.</p>
+    <div class="gallery-images">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Design World Image">
+    </div>
+</section>
+<!-- Newsletter Section -->
+<section id="newsletter-subscribe">
+    <h2>Subscribe to my newsletter</h2>
+    <form>
+        <label for="newsletter">Enter Your Email</label><br>
+        <input id="newsletter" type="email" placeholder="email@email.com"><br>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+ <!-- Related Articles Section -->
+<section>
+    <h2>Related Articles</h2>
+    <div class="related-articles">
+        <article>
+            <a href="https://www.designnews.com/">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
+                <h4>Here is what is happening in the Design World</h4>
+                <span class="article-date">September 5, 2024</span>
+            </a>
+        </article>
+        <article>
+            <a href="https://www.example.com/">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design News Image">
+                <h4>Understanding Modern Design Trends</h4>
+                <span class="article-date">September 6, 2024</span>
+            </a>
+        </article>
+        <article>
+            <a href="https://www.example.com/">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design Insights Image">
+                <h4>Insights into User Experience Design</h4>
+                <span class="article-date">September 7, 2024</span>
+            </a>
+        </article>
+        <article>
+            <a href="https://www.example.com/">
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Creative Process Image">
+                <h4>The Creative Process of Design</h4>
+                <span class="article-date">September 8, 2024</span>
+            </a>
+        </article>
+    </div>
+</section>
 
 
-        <aside>
-            <p> help this is suppose. to be on the side. It defines content aside from the content (like a sidebar)</p>
-        </aside>
-    </main>
-
-    <footer>
-        <div>
-            <p>&copy; 2024 Lara Stefani. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
