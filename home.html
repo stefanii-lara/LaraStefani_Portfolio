@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lara Stefani Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Englebert&family=Epilogue:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="Assets/styles/styleshome.css">
+</head>
+<body>
+
+<!-- Navigation Bar at the Top -->
+<nav id="top-nav">
+    <ul id="main-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</nav>
+        <li class="dropdown">
+            <a href="#">BLOG</a>
+        </li>
+        <li class="dropdown">
+            <a href="#">PORTFOLIO</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">POSTERS</a></li>
+                <li><a href="#">PHOTOGRAPHY</a></li>
+                <li><a href="#">BRANDING</a></li>
+                <li><a href="#">SOCIAL MEDIA</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">CONTACT</a>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Stefani</h1>
+    <h2>studios</h2>
+    <p>Hi there! I’m Lara Stefani, a Junior Graphic Design student at TCNJ. Welcome to my portfolio, where I proudly showcase my creative projects and design journey.</p>
+    <div class="buttons">
+        <button>Portfolio</button>
+        <button>Contact</button>
+    </div>
+    <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait" class="header-photo">
+</header>
+
+<main>
+    <section id="feature-section">
+        <div class="feature-image">
+            <img src="img_5terre.jpg" alt="Portfolio Highlight Image">
+        </div>
+        <div class="feature-content">
+            <h3>Transforming my Ideas into Reality</h3>
+            <p>Welcome to my portfolio! My projects range from magazine and book cover designs to social media graphics and branding solutions. Check out my blog to learn more about my process.</p>
+            <button>Blog</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="https://via.placeholder.com/150" alt="Design Image 1">
+            <img src="https://via.placeholder.com/150" alt="Design Image 2">
+            <img src="https://via.placeholder.com/150" alt="Design Image 3">
+            <img src="https://via.placeholder.com/150" alt="Design Image 4">
+            <img src="https://via.placeholder.com/150" alt="Design Image 5">
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section id="newsletter-subscribe">
+        <h2>Subscribe to our newsletter!</h2>
+        <p class="newsletter-text">Want to learn more about the Graphic Design world? Subscribe to receive updates every Sunday!</p>
+        <form>
+            <label for="newsletter" class="sr-only">Enter Your Email</label>
+            <input id="newsletter" type="email" placeholder="example@website.com" required>
+            <button type="submit">Subscribe</button>
+            <p class="error-message">This is not a valid email.</p>
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

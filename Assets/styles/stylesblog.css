@@ -1,0 +1,231 @@
+/* General Styling */
+body {
+    font-family: 'Epilogue', sans-serif;
+    width: 80%;
+    background: #FEF9F9;
+    color: #B1C543;
+    margin: 0 auto;
+}
+
+/* Top Navigation Styling */
+#top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FEF9F9;
+    padding: 20px 0; /* Remove horizontal padding */
+    z-index: 1000; /* Ensure the nav is above other content */
+    display: flex;
+    justify-content: center;
+}
+
+#main-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu > li {
+    position: relative;
+}
+
+#main-menu a {
+    color: #250B3A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#main-menu a:hover {
+    color: #B1C543;
+    text-decoration: underline;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none; /* Hide dropdowns initially */
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background-color: #EF6D58;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu a {
+    color: #EF6D58;
+    font-weight: normal;
+    display: block;
+}
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 80px; /* Space for fixed nav bar */
+    position: relative;
+}
+
+/* Apply the "Jua" font to the header h1 */
+header h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 160px;
+    margin: 0;
+}
+
+/* Styling for the "Studios" header */
+header h2 {
+    color: #B1C543;
+    font-family: 'Englebert', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    margin-top: -30px;
+}
+
+/* Content Styling */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+/* Table of Contents Styling */
+h4 {
+    color: #250B3A;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Newsletter Section Styling */
+#newsletter-subscribe {
+    background-color: #B1C543;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#newsletter-subscribe h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-text {
+    color: #FEF9F9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#newsletter-subscribe form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#newsletter-subscribe input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FEF9F9;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+}
+
+#newsletter-subscribe button {
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FEF9F9;
+    background-color: #EF6D58;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#newsletter-subscribe button:hover {
+    background-color: #D55A48;
+}
+
+.error-message {
+    color: #ff5a5a;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Display error message if email is invalid */
+#newsletter-subscribe input:invalid + .error-message {
+    display: block;
+}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
