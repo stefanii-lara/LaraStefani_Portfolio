@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Stefani Portfolio</title>
+    <title>Stefani Studios | Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,148 +23,94 @@
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-    </ul>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button">
+    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
+    <span>Menu</span>
+</button>
+</ul>
 </nav>
+<!-- Navigation Bar at the Top -->
+<nav id="top-nav">
+    <ul id="main-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
         <li class="dropdown">
-            <a href="#">BLOG</a>
-        </li>
-        <li class="dropdown">
-            <a href="#">PORTFOLIO</a>
+            <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="#">POSTERS</a></li>
-                <li><a href="#">PHOTOGRAPHY</a></li>
-                <li><a href="#">BRANDING</a></li>
-                <li><a href="#">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#">CONTACT</a>
-        </li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
+
     <header>
         <h1>Stefani</h1>
         <h2>studios</h2>
 </header>
 
-    <main>
-        <!-- Container for Main Content and Aside -->
-        <div class="content-container">
-            <!-- Main Content Area -->
-            <section class="main-content">
-                <!-- Table of Contents Article -->
-                <article>
-                    <h4><b>Table of Contents</b></h4>
-                    <p>
-                        1. Introduction<br>
-                        2. Key Features of My Portfolio<br>
-                        3. Design Process Behind the Scenes<br>
-                        4. How to Get in Touch<br>
-                    </p>
-                </article>
-                 <!-- Journey Section -->
-                 <section>
-                    <h3><b>My Journey</b></h3>
-                    <p>Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. I'm excited to showcase some of my design work here—ranging from earlier pieces to projects I've been developing recently. My creative journey started with a passion for visual storytelling and design, which has grown as I explored different mediums like photography, graphic design, and web design. I can't wait to share my work with you and look forward to connecting with others who are just as passionate about design!</p>
-                </section>
+<main>
+    <section id="magazines" class="gallery">
+        <h3>MAGAZINES</h3>
+        <div class="album">
+            <div class="responsive-container-block">
+                <img class="img" src="Assets\image\photo_hikes.png">
+                <img class="img" src="Assets\image\photo_football.png">
+                <img class="img" src="Assets\image\photo_chefery.png">
+            </div>
         </div>
+    </section>
+
+    <section id="photography" class="gallery">
+        <h3>PHOTOGRAPHY</h3>
+        <div class="album">
+            <div class="responsive-container-block">
+                <img class="img" src="Assets\image\photo_food.jpeg">
+                <img class="img" src="Assets\image\photo_wine.jpeg">
+                <img class="img" src="Assets\image\photo_grass.jpeg">
+                <img class="img" src="Assets\image\photo_kyle.jpeg">
+                <img class="img" src="Assets\image\photo_mansion.jpeg">
+                <img class="img" src="Assets\image\photo_girl.jpeg">
+                <img class="img" src="Assets\image\photo_dulce.jpeg">
+                <img class="img" src="Assets\image\photo_food.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section id="branding" class="gallery">
+        <h3>BRANDING</h3>
+        <div class="album">
+        <div class="responsive-container-block">
+        <img class="img2" src="Assets\image\photo_brand_bag.jpeg">
+        <img class="img2" src="Assets\image\photo_brand_cup.png">
+        <img class="img" src="Assets\image\photo_brand_menu.png">
+        <img class="img2" src="Assets\image\photo_brand_package.png">
+        <img class="img2" src="Assets\image\photo_brand_sign.png">
+        <img class="img" src="Assets\image\photo_brand_shirt.png">
+        </div>
+        </div>
+    </section>  
+
+    <section id="social-media" class="gallery">
+        <h3>SOCIAL MEDIA</h3>
+        <div class="album">
+            <div class="responsive-container-block">
+            <img class="img" src="Assets\image\photo_social_acai.png">
+            <img class="img" src="Assets\image\photo_social_acai2.png">
+            <img class="img" src="Assets\image\photo_social_juice.png">
+            </div>
+            </div>
+    </section>
+</main>
+
         
-        <!-- Key Features of My Portfolio -->
-        <section>
-            <h3><b>Key Features of my Portfolio</b></h3>
-            <p>My portfolio is more than just a collection of my work. It is a carefully curated experience, highlighting my projects in an accessible and engaging way. 
-                <br>Some key features include:<br>
-            </p>
-            <ul>
-                <li>Gallery: Users can click through a gallery of my projects, with each piece linking to a detailed breakdown of the design process.</li>
-                <li>Mobile-Friendly Design: The website is fully responsive and accessible across devices, ensuring a seamless experience whether you’re on a desktop or mobile.</li>
-            </ul>
-        </section>
-
-        <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_5terre.jpg">
-                <img src="img_5terre.jpg" alt="Cinque Terre">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_forest.jpg">
-                <img src="img_forest.jpg" alt="Forest">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_lights.jpg">
-                <img src="img_lights.jpg" alt="Northern Lights">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_mountains.jpg">
-                <img src="img_mountains.jpg" alt="Mountains">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="clearfix"></div>
-
-        <section id="newsletter-subscribe">
-            <h2>Subscribe to our newsletter!</h2>
-            <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
-            <form>
-                <label for="newsletter" class="sr-only">Enter Your Email</label>
-                <input id="newsletter" type="email" placeholder="example@website.com" required>
-                <button type="submit">Subscribe</button>
-                <p class="error-message">This is not a valid email.</p>
-            </form>
-        </section>
-        
-
-        <!-- Related Articles Section -->
-        <section>
-            <h2>Related Articles</h2>
-            <div class="related-articles">
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-            </div>
-        </section>
-    </main>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>
+</footer>
 </body>
 </html>

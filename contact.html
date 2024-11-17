@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Stefani Contact</title>
+    <title>Stefani Studios | Contact</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,54 +21,64 @@
     <ul id="main-menu">
         <li><a href="home.html">HOME</a></li>
         <li><a href="blog.html">BLOG</a></li>
-        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button">
+    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
+    <span>Menu</span>
+</button>
+</ul>
+</nav>
+<!-- Navigation Bar at the Top -->
+<nav id="top-nav">
+    <ul id="main-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li class="dropdown">
+            <a href="Portfolio.html">PORTFOLIO</a>
+            <ul class="dropdown-menu">
+                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
+            </ul>
+        </li>
         <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
-
 <!-- Contact Section -->
 <main id="contact-section">
-    <div class="contact-info">
+    <div class="contact-content">
         <h1>Contact me!</h1>
         <h2>LET'S CONNECT!</h2>
-        <p>I would love to hear your feedback about my portfolio or anything else you want to share or collaborate on. You can send me a message using the form on the right.</p>
-    </div>
-
-    <div class="contact-form">
-        <form>
-            <input type="email" placeholder="Your email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">SUBMIT NOW</button>
-        </form>
+        <p>I would love to hear your feedback about my portfolio or anything else you want to share or collaborate on. You can send me a message using the form below or connect with me on social media.</p>
+        <div class="contact-form">
+            <form>
+                <input type="email" placeholder="Your email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">SUBMIT NOW</button>
+            </form>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="Assets\image\linkedin-rounded-svgrepo-com (1).svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Assets\image\insta-svgrepo-com (4).svg" alt="Instagram"></a>
+        </div>
     </div>
 </main>
-<!-- Newsletter Subscription Section -->
+
+
 <section id="newsletter-subscribe">
     <h2>Subscribe to our newsletter!</h2>
-    <p class="newsletter-text">Want to learn more about the Graphic Design world? Subscribe to receive updates every Sunday!</p>
+    <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
     <form>
         <label for="newsletter" class="sr-only">Enter Your Email</label>
         <input id="newsletter" type="email" placeholder="example@website.com" required>
         <button type="submit">Subscribe</button>
-        <p class="error-message">This is not a valid email.</p>
     </form>
 </section>
-</main>
-
-   <!-- Related Articles Section -->
-   <section class="gallery">
-    <h2>Related Articles</h2>
-    <div class="gallery-images">
-        <img src="https://via.placeholder.com/150" alt="Design Image 1">
-        <img src="https://via.placeholder.com/150" alt="Design Image 2">
-        <img src="https://via.placeholder.com/150" alt="Design Image 3">
-        <img src="https://via.placeholder.com/150" alt="Design Image 4">
-        <img src="https://via.placeholder.com/150" alt="Design Image 5">
-    </div>
-</section>
-
-
 
 <!-- Footer -->
 <footer>

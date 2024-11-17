@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Stefani Home</title>
+    <title>Stefani Studios | Home</title>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +16,6 @@
     <link rel="stylesheet" href="Assets/styles/styleshome.css">
 </head>
 <body>
-
 <!-- Navigation Bar at the Top -->
 <nav id="top-nav">
     <ul id="main-menu">
@@ -22,74 +23,107 @@
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-    </ul>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button">
+    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
+    <span>Menu</span>
+</button>
+</ul>
 </nav>
+<!-- Navigation Bar at the Top -->
+<nav id="top-nav">
+    <ul id="main-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
         <li class="dropdown">
-            <a href="#">BLOG</a>
-        </li>
-        <li class="dropdown">
-            <a href="#">PORTFOLIO</a>
+            <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="#">POSTERS</a></li>
-                <li><a href="#">PHOTOGRAPHY</a></li>
-                <li><a href="#">BRANDING</a></li>
-                <li><a href="#">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#">CONTACT</a>
-        </li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
 
 <header>
+<header class="header-container">
     <h1>Stefani</h1>
     <h2>studios</h2>
-    <p>Hi there! I’m Lara Stefani, a Junior Graphic Design student at TCNJ. Welcome to my portfolio, where I proudly showcase my creative projects and design journey.</p>
-    <div class="buttons">
-        <button>Portfolio</button>
-        <button>Contact</button>
-    </div>
-    <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait" class="header-photo">
+    <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
+<!--  <p>Hi there! I’m Lara Stefani, a Junior Graphic Design student at The College of New Jersey (TCNJ). Welcome to my portfolio, where I proudly showcase my creative projects and design journey.</p> -->
+</header>
 </header>
 
 <main>
     <section id="feature-section">
-        <div class="feature-image">
-            <img src="img_5terre.jpg" alt="Portfolio Highlight Image">
-        </div>
         <div class="feature-content">
-            <h3>Transforming my Ideas into Reality</h3>
+            <h3>Transforming Ideas into Reality</h3>
             <p>Welcome to my portfolio! My projects range from magazine and book cover designs to social media graphics and branding solutions. Check out my blog to learn more about my process.</p>
-            <button>Blog</button>
+            <div class="buttons">
+                <a href="Portfolio.html" class="button">PORTFOLIO</a>
+                <a href="Contact.html" class="button">CONTACT</a>
+            </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-images">
-            <img src="https://via.placeholder.com/150" alt="Design Image 1">
-            <img src="https://via.placeholder.com/150" alt="Design Image 2">
-            <img src="https://via.placeholder.com/150" alt="Design Image 3">
-            <img src="https://via.placeholder.com/150" alt="Design Image 4">
-            <img src="https://via.placeholder.com/150" alt="Design Image 5">
-        </div>
-    </section>
+<!-- Gallery Section -->
+<section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+        <!-- Image 1: Magazine -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_chefery.png" alt="Gallery showcasing a magazine cover with green vegetables and recipe details">
+        <a href="#" aria-label="View more about Photography">
+                <div class="overlay">
+                    <h2>Magazine</h2>
+                </div>
+            </a>
+        </article>
 
-    <!-- Newsletter Subscription Section -->
+        <!-- Image 2: Photography -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_food.jpeg" alt="Gallery showing still life with fruits, cups, and wine">
+            <a href="#" aria-label="View more about Still Life Photography">
+                <div class="overlay">
+                    <h2>Photography</h2>
+                </div>
+            </a>
+        </article>
+
+        <!-- Image 3: Branding -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_brand_menu.png" alt="Gallery showcasing a coffee shop menu design with drinks and bites">
+            <a href="#" aria-label="View more about Menu Design">
+                <div class="overlay">
+                    <h2>Branding</h2>
+                </div>
+            </a>
+        </article>
+        <!-- Image 4: Social Media -->
+                <article class="overlay-container">
+                    <img src="Assets\image\photo_social_acai2.png" alt="Gallery showcasing a recipe book open with a colorful layout of dishes">
+                    <a href="#" aria-label="View more about Recipe Design">
+                        <div class="overlay">
+                            <h2>Social Media</h2>
+                        </div>
+                    </a>
+                 </div>
+</section>
+
     <section id="newsletter-subscribe">
         <h2>Subscribe to our newsletter!</h2>
-        <p class="newsletter-text">Want to learn more about the Graphic Design world? Subscribe to receive updates every Sunday!</p>
+        <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
         <form>
             <label for="newsletter" class="sr-only">Enter Your Email</label>
             <input id="newsletter" type="email" placeholder="example@website.com" required>
             <button type="submit">Subscribe</button>
-            <p class="error-message">This is not a valid email.</p>
         </form>
     </section>
 </main>
-
+  
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>

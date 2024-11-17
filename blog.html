@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Stefani Blog</title>
+    <title>Stefani Studios | Blog</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,103 +23,111 @@
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-    </ul>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button">
+    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
+    <span>Menu</span>
+</button>
+</ul>
 </nav>
+<!-- Navigation Bar at the Top -->
+<nav id="top-nav">
+    <ul id="main-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
         <li class="dropdown">
-            <a href="#">BLOG</a>
-        </li>
-        <li class="dropdown">
-            <a href="#">PORTFOLIO</a>
+            <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="#">POSTERS</a></li>
-                <li><a href="#">PHOTOGRAPHY</a></li>
-                <li><a href="#">BRANDING</a></li>
-                <li><a href="#">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#">CONTACT</a>
-        </li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
-
-    <header>
+<header>
+    <header class="header-container">
         <h1>Stefani</h1>
         <h2>studios</h2>
-</header>
+        <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
+    </header>
+    </header>
 
     <main>
         <!-- Container for Main Content and Aside -->
         <div class="content-container">
             <!-- Main Content Area -->
-            <section class="main-content">
-                <!-- Table of Contents Article -->
-                <article>
-                    <h4><b>Table of Contents</b></h4>
-                    <p>
-                        1. Introduction<br>
-                        2. Key Features of My Portfolio<br>
-                        3. Design Process Behind the Scenes<br>
-                        4. How to Get in Touch<br>
-                    </p>
-                </article>
-                 <!-- Journey Section -->
-                 <section>
-                    <h3><b>My Journey</b></h3>
-                    <p>Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. I'm excited to showcase some of my design work here—ranging from earlier pieces to projects I've been developing recently. My creative journey started with a passion for visual storytelling and design, which has grown as I explored different mediums like photography, graphic design, and web design. I can't wait to share my work with you and look forward to connecting with others who are just as passionate about design!</p>
-                </section>
-        </div>
-        
-        <!-- Key Features of My Portfolio -->
-        <section>
-            <h3><b>Key Features of my Portfolio</b></h3>
-            <p>My portfolio is more than just a collection of my work. It is a carefully curated experience, highlighting my projects in an accessible and engaging way. 
-                <br>Some key features include:<br>
+            <section class="table-of-contents">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#portfolio-gallery">2. Portfolio</a></li>
+                    <li><a href="#newsletter">3. Subscribe to our Newsletter</a></li>
+                    <li><a href="#related-articles">4. Related Articles</a></li>
+
+                </ul>
+            </section>
+<section class="introduction">
+    <div class="intro-container">
+        <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait wearing white while posing in front of the beach" class="intro-image">
+        <div class="intro-text">
+            <h2>Introduction</h2>
+            <p>
+                Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. My passion for creativity and design has been a driving force in my academic and personal journey. I'm excited to showcase some of my design work here—ranging from earlier pieces that reflect my foundational skills to recent projects that highlight my growth and adaptability as a designer.</p>
+                My creative journey started with a deep interest in visual storytelling and design, a passion that has only grown as I've explored different mediums like photography, graphic design, and web design. Each project has been an opportunity to challenge myself, refine my craft, and develop new techniques to solve creative problems effectively.</p>
+                What excites me the most about design is its ability to communicate ideas, evoke emotions, and bring people together. Whether it's through a thoughtfully designed logo, an engaging social media graphic, or an interactive website layout, I strive to create work that leaves a lasting impression and tells a compelling story.</p>
             </p>
-            <ul>
-                <li>Gallery: Users can click through a gallery of my projects, with each piece linking to a detailed breakdown of the design process.</li>
-                <li>Mobile-Friendly Design: The website is fully responsive and accessible across devices, ensuring a seamless experience whether you’re on a desktop or mobile.</li>
-            </ul>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_5terre.jpg">
-                <img src="img_5terre.jpg" alt="Cinque Terre">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_forest.jpg">
-                <img src="img_forest.jpg" alt="Forest">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_lights.jpg">
-                <img src="img_lights.jpg" alt="Northern Lights">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="img_mountains.jpg">
-                <img src="img_mountains.jpg" alt="Mountains">
-              </a>
-              <div class="desc">Add a description of the image here</div>
-            </div>
-          </div>
-          
-          <div class="clearfix"></div>
+        
+<!-- Gallery Section -->
+<section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-images">
+        <!-- Image 1: Magazine -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_chefery.png" alt="Gallery showcasing a magazine cover with green vegetables and recipe details">
+            <a href="#" aria-label="View more about Photography">
+                <div class="overlay">
+                    <h2>Magazine</h2>
+                </div>
+            </a>
+        </article>
 
+        <!-- Image 2: Photography -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_food.jpeg" alt="Gallery showing still life with fruits, cups, and wine">
+            <a href="#" aria-label="View more about Still Life Photography">
+                <div class="overlay">
+                    <h2>Photography</h2>
+                </div>
+            </a>
+        </article>
+
+        <!-- Image 3: Branding -->
+        <article class="overlay-container">
+            <img src="Assets\image\photo_brand_menu.png" alt="Gallery showcasing a coffee shop menu design with drinks and bites">
+            <a href="#" aria-label="View more about Menu Design">
+                <div class="overlay">
+                    <h2>Branding</h2>
+                </div>
+            </a>
+        </article>
+        <!-- Image 4: Social Media -->
+                <article class="overlay-container">
+                    <img src="Assets\image\photo_social_acai2.png" alt="Gallery showcasing a recipe book open with a colorful layout of dishes">
+                    <a href="#" aria-label="View more about Recipe Design">
+                        <div class="overlay">
+                            <h2>Social Media</h2>
+                        </div>
+                    </a>
+                 </div>
+</section>
+<!-- newsletter-subscribe -->
         <section id="newsletter-subscribe">
             <h2>Subscribe to our newsletter!</h2>
             <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
@@ -126,45 +135,51 @@
                 <label for="newsletter" class="sr-only">Enter Your Email</label>
                 <input id="newsletter" type="email" placeholder="example@website.com" required>
                 <button type="submit">Subscribe</button>
-                <p class="error-message">This is not a valid email.</p>
             </form>
         </section>
         
+<!-- Related Articles -->
+<h2><b>Related Articles</b></h2>
+<section class="related-articles">
+    <a href="https://www.creativeboom.com/features/modernist-graphic-design-in-britain-1945-1980/" class="related-article-link" target="_blank">
+        <div class="related-article">
+            <img src="Assets/image/news2.jpg" alt="Yellow book cover: 'Modernist Graphic Design in Britain 1945-1980'" class="article-image">
+            <h1>New book celebrates the lost pioneers of British graphic design</h1>
+            <p>7 November 2024</p>
+            <p>Modernist Graphic Design in Britain 1945 & 1980 sheds light on the post-war best designers.</p>
+        </div>
+    </a>
+    <a href="https://www.creativeboom.com/features/the-biggest-challenges-for-design-studios-in-2025-and-how-leaders-plan-to-tackle-them/" class="related-article-link" target="_blank">
+        <div class="related-article">
+            <img src="Assets/image/news3.jpeg" alt="A man sitting at a table with a notebook and coffee cup" class="article-image">
+            <h1>The biggest challenges for design studios in 2025 written by Tom May</h1>
+            <p>6 November 2024</p>
+            <p> Things are changing fast right now, and design studios face a pivotal year ahead. </p>
+        </div>
+    </a>
+    <a href="https://www.creativeboom.com/features/will-ai-replace-illustrators/" class="related-article-link" target="_blank">
+        <div class="related-article">
+            <img src="Assets/image/news4.png" alt="Illustration of a person surrounded by colorful AI elements" class="article-image">
+            <h1>Is AI really coming for your illustration career? An industry expert weighs in</h1>
+            <p>6 November 2024</p>
+            <p>As an illustration agent at Folio Art, James Hughes offers insights into the future of design amidst the rise of AI.</p>
+        </div>
+    </a>
+    <a href="https://www.creativeboom.com/resources/typokompanii-foundry/" class="related-article-link" target="_blank">
+        <div class="related-article">
+            <img src="Assets/image/news5.jpg" alt="Team of people working in a creative studio surrounded by designs and books" class="article-image">
+            <h1>Meet Tüpokompanii, the type foundry redefining design through 'mistakes'</h1>
+            <p>23 October 2024</p>
+            <p>Founded in 2022 by Andree Paat and Aimur Takk, Tüpokompanii is embracing an unusual approach.</p>
+        </div>
+    </a>
+</section>
 
-        <!-- Related Articles Section -->
-        <section>
-            <h2>Related Articles</h2>
-            <div class="related-articles">
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.designnews.com/">
-                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" width="200" alt="Design World Image">
-                        <h4>Here is what is happening in the Design World</h4>
-                        <span class="article-date">September 5, 2024</span>
-                    </a>
-                </article>
-            </div>
-        </section>
-    </main>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Epilogue', sans-serif;
-    background-color: #2D1B3E;
+    background-color: #2C2D41;
     margin: 0;
     padding: 0;
     color: #FEF9F9;
@@ -11,66 +11,133 @@ body {
 #top-nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #FEF9F9;
-    padding: 20px 0;
-    z-index: 1000;
+    padding: 20px 0; /* Remove horizontal padding */
+    z-index: 1000; /* Ensure the nav is above other content */
     display: flex;
     justify-content: center;
 }
 
 #main-menu {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu > li {
+    position: relative;
 }
 
 #main-menu a {
-    color: #250B3A;
+    color: #2C2D41;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
+#main-menu a:hover {
+    color: #B1C543;
+    text-decoration: underline;
+}
+
+/* Basic styling for the main menu */
+#main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#main-menu > li {
+    position: relative;
+}
+
+#main-menu a {
+    text-decoration: none;
+    color: #2C2D41;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#main-menu a:hover {
+    color: #B1C543;
+}
+
+/* Hide the dropdown menu initially */
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position it below the main item */
+    left: 0;
+    background-color: #EF6D58;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu a {
+    color: #FEF9F9;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 /* Contact Section Styling */
 #contact-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 10%;
+    text-align: center; /* Center align all content */
+    padding: 50px 10%; /* Adjust padding for spacing */
+    background-color: #2C2D41; /* Optional: Add a background color */
+    color: #FFFFFF;
 }
 
-.contact-info {
-    width: 50%;
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
 }
 
-.contact-info h1 {
-    font-size: 100px;
+.contact-content h1 {
+    font-size: 80px;
     font-family: 'Jua', sans-serif;
     color: #A2C523;
-    text-align: right;
-    margin-right: 50px;
-    margin-top: 0px;
+    margin: 20px 0; /* Adjust spacing around heading */
 }
 
-.contact-info h2 {
+.contact-content h2 {
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
+    color: #A2C523;
 }
 
-.contact-info p {
+.contact-content p {
     font-size: 18px;
-    margin-top: 20px;
+    margin: 20px auto;
     line-height: 1.5;
+    max-width: 600px; /* Limit paragraph width */
 }
 
 .contact-form {
-    width: 45%;
+    margin: auto; /* Center the form */
+    max-width: 500px; /* Set a maximum width for the form */
     background-color: #FFFFFF;
-    padding: 20px;
+    padding: 80px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 30%;
 }
 
 .contact-form form {
@@ -79,8 +146,9 @@ body {
     gap: 15px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 95%;
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width for inputs */
     padding: 10px;
     border: 2px solid #A2C523;
     border-radius: 5px;
@@ -102,65 +170,75 @@ body {
 .contact-form button:hover {
     background-color: #D05546;
 }
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    padding: 40px;
-    background-color: #B1C543;
-}
 
-.gallery h2 {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align:left;
-}
-
-.gallery-images {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.gallery-images img {
-    width: 200px;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.gallery-images img:hover {
-    transform: scale(1.05);
-}
-
-/* Newsletter Section */
+/* Newsletter Section Styling */
 #newsletter-subscribe {
     background-color: #B1C543;
-    color: #FFF;
-    padding: 40px;
-    text-align: center;
+    padding: 20px;
     border-radius: 10px;
-    margin: 40px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#newsletter-subscribe h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-text {
+    color: #FEF9F9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#newsletter-subscribe form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 #newsletter-subscribe input[type="email"] {
     padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FEF9F9;
     border-radius: 5px;
-    border: none;
-    width: 70%;
-    max-width: 400px;
-    margin-bottom: 10px;
+    outline: none;
+    width: 250px;
 }
 
 #newsletter-subscribe button {
-    background-color: #333;
-    color: #FFF;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FEF9F9;
+    background-color: #EF6D58;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+#newsletter-subscribe button:hover {
+    background-color: #D55A48;
+}
+
+.error-message {
+    color: #ff5a5a;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Display error message if email is invalid */
+#newsletter-subscribe input:invalid + .error-message {
+    display: block;
+}
 .error-message {
     color: red;
     font-size: 12px;
@@ -168,8 +246,35 @@ body {
 
 /* Footer */
 footer {
-    background-color: #3A3C56;
+    background-color: #2C2D41;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+/* Tablet view */
+@media (max-width: 1024px) {
+    /* Tablet-specific styles go here */
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    /* Mobile-specific styles go here */
+}
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 40px; /* Set width for icons */
+    height: 40px; /* Explicitly set height to match width */
+    object-fit: cover; /* Ensure images fill the defined space evenly */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    opacity: 0.8; /* Reduce opacity slightly on hover */
 }
