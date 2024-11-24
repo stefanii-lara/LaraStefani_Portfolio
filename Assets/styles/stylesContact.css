@@ -97,10 +97,50 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+/* Header */
+header {
+    background-color: #2C2D41;
+    color: #B1C543;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    position: relative; /* Ensure header adjusts to its content */
+    overflow: hidden; /* Prevent overflow issues from negatively positioned elements */
+    padding:10px;
+    margin-top:30px;
+
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Stack headers vertically */
+    align-items: flex-start; /* Align headers to the left */
+}
+
+header h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 120px;
+    margin: 0 0 10px 0; /* Consistent spacing */
+    text-align: center;
+    position: relative; /* Needed for relative alignment */
+    justify-content: center;
+
+}
+
+.header-line {
+    width: 250px;
+    height: auto;
+    margin:0 auto;
+    margin-top:-50px;
+}
+
+
+
 /* Contact Section Styling */
 #contact-section {
     text-align: center; /* Center align all content */
-    padding: 50px 10%; /* Adjust padding for spacing */
+    padding: 10px; /* Adjust padding for spacing */
     background-color: #2C2D41; /* Optional: Add a background color */
     color: #FFFFFF;
 }
@@ -201,6 +241,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-bottom:20px;
 }
 
 #newsletter-subscribe input[type="email"] {

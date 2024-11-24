@@ -102,10 +102,13 @@ body {
 header {
     background-color: #2C2D41;
     color: #B1C543;
-    text-align: center;
-    padding: 50px 10%; /* Adjust padding for top and sides */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
     position: relative; /* Ensure header adjusts to its content */
     overflow: hidden; /* Prevent overflow issues from negatively positioned elements */
+    padding:50px;
+
 }
 
 .header-container {
@@ -120,6 +123,8 @@ header h1 {
     margin: 0 0 10px 0; /* Consistent spacing */
     text-align: center;
     position: relative; /* Needed for relative alignment */
+    justify-content: center;
+
 }
 
 header h2 {
@@ -130,7 +135,7 @@ header h2 {
     text-align: center;
     position: absolute; /* Allows precise positioning */
     top: 160px; /* Adjust to align with "Stefani" */
-    left: 365px;
+    left: 260px;
 }
 
 header p {
@@ -140,21 +145,24 @@ header p {
 }
 
 .header-line {
-    width: 250px;
+    width: 200px;
     height: auto;
-    margin-top: 15px;
+    margin:0;
     align-self: flex-start; /* Align the line to the left */
     position:absolute;
-    left:125px;
+    top:150px;
+    left:50px;
 }
 
 
 /* Style for the header buttons container */
 .buttons {
     font-family: 'Epilogue', sans-serif;
-    display: flex;
+    display:flex;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 /* Button styling */
@@ -170,20 +178,22 @@ a.button {
 }
 
 a.button:hover {
-    background-color: #98a432;
+    background-color: white;
+    color: #2C2D41;
 }
 
 #feature-section {
     display: flex;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
-    padding: 100px;
+    padding: 10px;
     background-color: #98a432;
 }
 
 .feature-content {
     max-width: 600px;
     text-align: center; /* Centers text within the container */
+    line-height:1.5;
 }
 
 .feature-content h3 {
@@ -196,12 +206,6 @@ a.button:hover {
     color: #f0f0f4;
     font-size: 18px;
     margin-bottom: 30px; /* Add spacing below the paragraph */
-}
-
-/* General Gallery Section Styling */
-.gallery {
-    text-align: center;
-    padding: 40px 0;
 }
 
 /* General Gallery Section Styling */
@@ -223,7 +227,7 @@ a.button:hover {
     align-items: center; /* Center items vertically */
     gap: 20px; /* Space between the images */
     flex-wrap: nowrap; /* Ensure items stay on one line */
-    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    overflow-y:hidden; /* Enable horizontal scrolling if content overflows */
 }
 
 /* Individual Image Styling */
@@ -270,6 +274,7 @@ a.button:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-bottom:0px;
 }
 
 #newsletter-subscribe input[type="email"] {
@@ -294,7 +299,8 @@ a.button:hover {
 }
 
 #newsletter-subscribe button:hover {
-    background-color: #2C2D41;
+        background-color: white;
+        color: #2C2D41;
 }
 
 .error-message {

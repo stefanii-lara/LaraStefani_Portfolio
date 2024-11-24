@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
+    <link rel="icon" type="image/x-icon" href="Assets\image\Slogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefani Studios | Portfolio</title>
 
@@ -48,69 +48,141 @@
     </ul>
 </nav>
 
-    <header>
+<header>
+    <header class="header-container">
         <h1>Stefani</h1>
         <h2>studios</h2>
-</header>
+        <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
+    </header>
+    </header>
 
 <main>
+    <!-- Magazines Section -->
     <section id="magazines" class="gallery">
         <h3>MAGAZINES</h3>
-        <div class="album">
-            <div class="responsive-container-block">
-                <img class="img" src="Assets\image\photo_hikes.png">
-                <img class="img" src="Assets\image\photo_football.png">
-                <img class="img" src="Assets\image\photo_chefery.png">
+        <div class="row">
+            <div class="column">
+                <img src="Assets/image/photo_hikes.png" alt="Hiking" onclick="myFunction(this, 'magazine-container');">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_football.png" alt="Football" onclick="myFunction(this, 'magazine-container');">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="myFunction(this, 'magazine-container');">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="myFunction(this, 'magazine-container');">
             </div>
         </div>
     </section>
 
+    <!-- Expanding Image Container for Magazines -->
+    <div class="container" id="magazine-container">
+        <span onclick="closeContainer('magazine-container')" class="closebtn">&times;</span>
+        <img id="expandedImg1" style="width:100%">
+        <div id="imgtext1"></div>
+    </div>
+
+    <!-- Photography Section -->
     <section id="photography" class="gallery">
         <h3>PHOTOGRAPHY</h3>
-        <div class="album">
-            <div class="responsive-container-block">
-                <img class="img" src="Assets\image\photo_food.jpeg">
-                <img class="img" src="Assets\image\photo_wine.jpeg">
-                <img class="img" src="Assets\image\photo_grass.jpeg">
-                <img class="img" src="Assets\image\photo_kyle.jpeg">
-                <img class="img" src="Assets\image\photo_mansion.jpeg">
-                <img class="img" src="Assets\image\photo_girl.jpeg">
-                <img class="img" src="Assets\image\photo_dulce.jpeg">
-                <img class="img" src="Assets\image\photo_food.jpeg">
+        <div class="row">
+            <div class="column">
+                <img src="Assets/image/photo_food.jpeg" alt="Food" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_wine.jpeg" alt="Wine" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_grass.jpeg" alt="Grass" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_kyle.jpeg" alt="Kyle" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_mansion.jpeg" alt="Mansion" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_girl.jpeg" alt="Girl" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="myFunction(this, 'photography-container')">
+            </div>
+            <div class="column">
+                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="myFunction(this, 'photography-container')">
             </div>
         </div>
     </section>
 
+    <!-- Expanding Image Container for Photography -->
+    <div class="container" id="photography-container">
+        <span onclick="closeContainer('photography-container')" class="closebtn">&times;</span>
+        <img id="expandedImg2" style="width:100%">
+        <div id="imgtext2"></div>
+    </div>
+
+
+    <!-- Branding Section -->
     <section id="branding" class="gallery">
         <h3>BRANDING</h3>
-        <div class="album">
-        <div class="responsive-container-block">
-        <img class="img2" src="Assets\image\photo_brand_bag.jpeg">
-        <img class="img2" src="Assets\image\photo_brand_cup.png">
-        <img class="img" src="Assets\image\photo_brand_menu.png">
-        <img class="img2" src="Assets\image\photo_brand_package.png">
-        <img class="img2" src="Assets\image\photo_brand_sign.png">
-        <img class="img" src="Assets\image\photo_brand_shirt.png">
-        </div>
-        </div>
-    </section>  
+        <div class="row">
+            <div class="column">
+                <img src="Assets\image\photo_brand_bag.jpeg" alt="Food" onclick="myFunction(this, 'branding-container')">
+            </div>
+            <div class="column">
+                <img src="Assets\image\photo_brand_sign.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+            </div>
+            <div class="column">
+                <img src="Assets\image\photo_brand_shirt.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+            </div>
+            <div class="column">
+                <img src="Assets\image\photo_brand_cup.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+            </div>
 
+           
+        </div>
+    </section>
+
+    <!-- Expanding Image Container for Branding -->
+    <div class="container" id="branding-container">
+        <span onclick="closeContainer('branding-container')" class="closebtn">&times;</span>
+        <img id="expandedImg3" style="width:100%">
+        <div id="imgtext3"></div>
+    </div>
+
+
+
+    <!-- Social Media Section -->
     <section id="social-media" class="gallery">
         <h3>SOCIAL MEDIA</h3>
-        <div class="album">
-            <div class="responsive-container-block">
-            <img class="img" src="Assets\image\photo_social_acai.png">
-            <img class="img" src="Assets\image\photo_social_acai2.png">
-            <img class="img" src="Assets\image\photo_social_juice.png">
+        <div class="row">
+            <div class="column">
+                <img src="Assets\image\photo_social_acai.png" alt="Social" onclick="myFunction(this, 'social-container')">
             </div>
+            <div class="column">
+                <img src="Assets\image\photo_social_acai2.png" alt="Social" onclick="myFunction(this, 'social-container')">
+            </div>
+            <div class="column">
+                <img src="Assets\image\photo_social_juice.png" alt="Social" onclick="myFunction(this, 'social-container')">
+            </div>
+            <div class="column">
+                <img src="Assets\image\photo_social_acai.png" alt="Social" onclick="myFunction(this, 'social-container')">
             </div>
     </section>
-</main>
 
-        
+    <!-- Expanding Image Container for Social -->
+    <div class="container" id="social-container">
+        <span onclick="closeContainer('social-container')" class="closebtn">&times;</span>
+        <img id="expandedImg4" style="width:100%">
+        <div id="imgtext4"></div>
+    </div>
+
+
+</main>
+<script src="GalleryFunction.js"></script>
+</body>    
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>
 </footer>
-</body>
 </html>

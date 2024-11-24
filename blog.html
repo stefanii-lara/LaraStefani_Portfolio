@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="Assets\image\favicon1.jpg">
+    <link rel="icon" type="image/x-icon" href="Assets\image\Slogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefani Studios | Blog</title>
 
@@ -53,45 +53,42 @@
         <h2>studios</h2>
         <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
     </header>
-    </header>
+    </header>    
 
     <main>
-        <!-- Container for Main Content and Aside -->
-        <div class="content-container">
-            <!-- Main Content Area -->
-            <section class="table-of-contents">
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="#introduction">1. Introduction</a></li>
-                    <li><a href="#portfolio-gallery">2. Portfolio</a></li>
-                    <li><a href="#newsletter">3. Subscribe to our Newsletter</a></li>
-                    <li><a href="#related-articles">4. Related Articles</a></li>
-
-                </ul>
-            </section>
-<section class="introduction">
-    <div class="intro-container">
-        <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait wearing white while posing in front of the beach" class="intro-image">
-        <div class="intro-text">
-            <h2>Introduction</h2>
-            <p>
-                Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. My passion for creativity and design has been a driving force in my academic and personal journey. I'm excited to showcase some of my design work here—ranging from earlier pieces that reflect my foundational skills to recent projects that highlight my growth and adaptability as a designer.</p>
-                My creative journey started with a deep interest in visual storytelling and design, a passion that has only grown as I've explored different mediums like photography, graphic design, and web design. Each project has been an opportunity to challenge myself, refine my craft, and develop new techniques to solve creative problems effectively.</p>
-                What excites me the most about design is its ability to communicate ideas, evoke emotions, and bring people together. Whether it's through a thoughtfully designed logo, an engaging social media graphic, or an interactive website layout, I strive to create work that leaves a lasting impression and tells a compelling story.</p>
-            </p>
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Intro')" id="defaultOpen">Intro</button>
+    <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
+    <button class="tablinks" onclick="openTab(event, 'Recent Posts')">Recent Posts</button>
+    <button class="tablinks" onclick="openTab(event, 'Coming Soon')">Coming Soon</button>
+  </div>
+   <!-- Tab content -->
+<div id="Intro" class="tabcontent">
+    <section class="introduction" id="introduction">
+        <div class="intro-container">
+            <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait wearing white while posing in front of the beach" class="intro-image">
+            <div class="intro-text">
+                <h2>Introduction</h2>
+                <p>
+                    Hi, I'm Lara Stefani, a senior at The College of New Jersey (TCNJ), and I'm thrilled to be graduating next year. My passion for creativity and design has been a driving force in my academic and personal journey. I'm excited to showcase some of my design work here—ranging from earlier pieces that reflect my foundational skills to recent projects that highlight my growth and adaptability as a designer.</p>
+                    My creative journey started with a deep interest in visual storytelling and design, a passion that has only grown as I've explored different mediums like photography, graphic design, and web design. Each project has been an opportunity to challenge myself, refine my craft, and develop new techniques to solve creative problems effectively.</p>
+                    What excites me the most about design is its ability to communicate ideas, evoke emotions, and bring people together. Whether it's through a thoughtfully designed logo, an engaging social media graphic, or an interactive website layout, I strive to create work that leaves a lasting impression and tells a compelling story.</p>
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-
-        
+    </section>
+  </div>
+  
+  <div id="Gallery" class="tabcontent">
 <!-- Gallery Section -->
-<section class="gallery">
+<section class="gallery" id="gallery-images">
     <h2>Gallery</h2>
     <div class="gallery-images">
         <!-- Image 1: Magazine -->
         <article class="overlay-container">
             <img src="Assets\image\photo_chefery.png" alt="Gallery showcasing a magazine cover with green vegetables and recipe details">
-            <a href="#" aria-label="View more about Photography">
+            <a href="Portfolio.html#magazines" aria-label="View more about Photography">
                 <div class="overlay">
                     <h2>Magazine</h2>
                 </div>
@@ -101,7 +98,7 @@
         <!-- Image 2: Photography -->
         <article class="overlay-container">
             <img src="Assets\image\photo_food.jpeg" alt="Gallery showing still life with fruits, cups, and wine">
-            <a href="#" aria-label="View more about Still Life Photography">
+            <a href="Portfolio.html#photography" aria-label="View more about Still Life Photography">
                 <div class="overlay">
                     <h2>Photography</h2>
                 </div>
@@ -111,7 +108,7 @@
         <!-- Image 3: Branding -->
         <article class="overlay-container">
             <img src="Assets\image\photo_brand_menu.png" alt="Gallery showcasing a coffee shop menu design with drinks and bites">
-            <a href="#" aria-label="View more about Menu Design">
+            <a href="Portfolio.html#branding" aria-label="View more about Menu Design">
                 <div class="overlay">
                     <h2>Branding</h2>
                 </div>
@@ -120,13 +117,29 @@
         <!-- Image 4: Social Media -->
                 <article class="overlay-container">
                     <img src="Assets\image\photo_social_acai2.png" alt="Gallery showcasing a recipe book open with a colorful layout of dishes">
-                    <a href="#" aria-label="View more about Recipe Design">
+                    <a href="Portfolio.html#social-media" aria-label="View more about Recipe Design">
                         <div class="overlay">
                             <h2>Social Media</h2>
                         </div>
                     </a>
                  </div>
 </section>
+  </div>
+  
+  <div id="Recent Posts" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Coming Soon" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+
+
+        
+
 <!-- newsletter-subscribe -->
         <section id="newsletter-subscribe">
             <h2>Subscribe to our newsletter!</h2>
@@ -139,12 +152,13 @@
         </section>
         
 <!-- Related Articles -->
-<h2><b>Related Articles</b></h2>
-<section class="related-articles">
+ <section class="related-articles">
+<h2>Related Articles</h2>
+<section class="related-articles" id="related-articles">
     <a href="https://www.creativeboom.com/features/modernist-graphic-design-in-britain-1945-1980/" class="related-article-link" target="_blank">
         <div class="related-article">
             <img src="Assets/image/news2.jpg" alt="Yellow book cover: 'Modernist Graphic Design in Britain 1945-1980'" class="article-image">
-            <h1>New book celebrates the lost pioneers of British graphic design</h1>
+            <h3>New book celebrates the lost pioneers of British graphic design</h3>
             <p>7 November 2024</p>
             <p>Modernist Graphic Design in Britain 1945 & 1980 sheds light on the post-war best designers.</p>
         </div>
@@ -152,7 +166,7 @@
     <a href="https://www.creativeboom.com/features/the-biggest-challenges-for-design-studios-in-2025-and-how-leaders-plan-to-tackle-them/" class="related-article-link" target="_blank">
         <div class="related-article">
             <img src="Assets/image/news3.jpeg" alt="A man sitting at a table with a notebook and coffee cup" class="article-image">
-            <h1>The biggest challenges for design studios in 2025 written by Tom May</h1>
+            <h3>The biggest challenges for design studios in 2025 written by Tom May</h3>
             <p>6 November 2024</p>
             <p> Things are changing fast right now, and design studios face a pivotal year ahead. </p>
         </div>
@@ -160,7 +174,7 @@
     <a href="https://www.creativeboom.com/features/will-ai-replace-illustrators/" class="related-article-link" target="_blank">
         <div class="related-article">
             <img src="Assets/image/news4.png" alt="Illustration of a person surrounded by colorful AI elements" class="article-image">
-            <h1>Is AI really coming for your illustration career? An industry expert weighs in</h1>
+            <h3>Is AI really coming for your illustration career? An industry expert weighs in</h3>
             <p>6 November 2024</p>
             <p>As an illustration agent at Folio Art, James Hughes offers insights into the future of design amidst the rise of AI.</p>
         </div>
@@ -168,18 +182,18 @@
     <a href="https://www.creativeboom.com/resources/typokompanii-foundry/" class="related-article-link" target="_blank">
         <div class="related-article">
             <img src="Assets/image/news5.jpg" alt="Team of people working in a creative studio surrounded by designs and books" class="article-image">
-            <h1>Meet Tüpokompanii, the type foundry redefining design through 'mistakes'</h1>
+            <h3>Meet Tüpokompanii, the type foundry redefining design through 'mistakes'</h3>
             <p>23 October 2024</p>
             <p>Founded in 2022 by Andree Paat and Aimur Takk, Tüpokompanii is embracing an unusual approach.</p>
         </div>
     </a>
 </section>
-
+</section>
+</main>
+<script src="openTab.js"></script>
+</body>
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 Stefani Studios. All Rights Reserved.</p>
 </footer>
-</body>
-</html>
-</body>
 </html>
