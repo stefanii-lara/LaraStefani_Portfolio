@@ -13,9 +13,13 @@
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="Assets/styles/stylesblog.css">
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-- Navigation Bar at the Top -->
 <nav id="top-nav">
     <ul id="main-menu">
@@ -23,12 +27,26 @@
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-<!-- Mobile Menu Button -->
+    </ul>
+</nav>
+        <!-- Mobile Menu Button -->
+<nav id="mobile-nav">
 <button id="mobile-menu-button">
-    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
-    <span>Menu</span>
+    <img src="Assets\image\menu-svgrepo-com.svg" width="50" alt="Menu Icon"><br>
 </button>
-</ul>
+<div id="overlay-menu-container">
+    <div id="overlay-menu">
+    <menu>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </menu>
+    <button id ="close-menu">
+        <img src="Assets\image\close.svg" width="50"><br>
+    </button>
+    </div>
+</div>
 </nav>
 <!-- Navigation Bar at the Top -->
 <nav id="top-nav">
@@ -47,6 +65,7 @@
         <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </nav>
+
 <header>
     <header class="header-container">
         <h1>Stefani</h1>
@@ -191,6 +210,8 @@
 </section>
 </main>
 <script src="openTab.js"></script>
+    <!-- mobile menu script -->
+    <script src="mobile-menu.js"></script>
 </body>
 <!-- Footer -->
 <footer>

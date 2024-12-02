@@ -13,9 +13,13 @@
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="Assets/styles/stylesPort.css">
+
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-- Navigation Bar at the Top -->
 <nav id="top-nav">
     <ul id="main-menu">
@@ -23,12 +27,26 @@
         <li><a href="blog.html">BLOG</a></li>
         <li><a href="Portfolio.html">PORTFOLIO</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-<!-- Mobile Menu Button -->
+    </ul>
+</nav>
+        <!-- Mobile Menu Button -->
+<nav id="mobile-nav">
 <button id="mobile-menu-button">
-    <img src="Assets/image/menu-svgrepo-com.svg" width="30" alt="Menu Icon">
-    <span>Menu</span>
+    <img src="Assets\image\menu-svgrepo-com.svg" width="50" alt="Menu Icon"><br>
 </button>
-</ul>
+<div id="overlay-menu-container">
+    <div id="overlay-menu">
+    <menu>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </menu>
+    <button id ="close-menu">
+        <img src="Assets\image\close.svg" width="50"><br>
+    </button>
+    </div>
+</div>
 </nav>
 <!-- Navigation Bar at the Top -->
 <nav id="top-nav">
@@ -48,6 +66,7 @@
     </ul>
 </nav>
 
+
 <header>
     <header class="header-container">
         <h1>Stefani</h1>
@@ -62,16 +81,16 @@
         <h3>MAGAZINES</h3>
         <div class="row">
             <div class="column">
-                <img src="Assets/image/photo_hikes.png" alt="Hiking" onclick="myFunction(this, 'magazine-container');">
+                <img src="Assets/image/photo_hikes.png" alt="Hiking" onclick="galleryOpen(this, 'magazine-container');">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_football.png" alt="Football" onclick="myFunction(this, 'magazine-container');">
+                <img src="Assets/image/photo_football.png" alt="Football" onclick="galleryOpen(this, 'magazine-container');">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="myFunction(this, 'magazine-container');">
+                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="galleryOpen(this, 'magazine-container');">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="myFunction(this, 'magazine-container');">
+                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="galleryOpen(this, 'magazine-container');">
             </div>
         </div>
     </section>
@@ -79,7 +98,7 @@
     <!-- Expanding Image Container for Magazines -->
     <div class="container" id="magazine-container">
         <span onclick="closeContainer('magazine-container')" class="closebtn">&times;</span>
-        <img id="expandedImg1" style="width:100%">
+        <img id="expandedImg1">
         <div id="imgtext1"></div>
     </div>
 
@@ -88,28 +107,28 @@
         <h3>PHOTOGRAPHY</h3>
         <div class="row">
             <div class="column">
-                <img src="Assets/image/photo_food.jpeg" alt="Food" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_food.jpeg" alt="Food" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_wine.jpeg" alt="Wine" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_wine.jpeg" alt="Wine" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_grass.jpeg" alt="Grass" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_grass.jpeg" alt="Grass" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_kyle.jpeg" alt="Kyle" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_kyle.jpeg" alt="Kyle" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_mansion.jpeg" alt="Mansion" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_mansion.jpeg" alt="Mansion" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_girl.jpeg" alt="Girl" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_girl.jpeg" alt="Girl" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="galleryOpen(this, 'photography-container')">
             </div>
             <div class="column">
-                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="myFunction(this, 'photography-container')">
+                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="galleryOpen(this, 'photography-container')">
             </div>
         </div>
     </section>
@@ -117,7 +136,7 @@
     <!-- Expanding Image Container for Photography -->
     <div class="container" id="photography-container">
         <span onclick="closeContainer('photography-container')" class="closebtn">&times;</span>
-        <img id="expandedImg2" style="width:100%">
+        <img id="expandedImg2" style="width:60%">
         <div id="imgtext2"></div>
     </div>
 
@@ -127,16 +146,16 @@
         <h3>BRANDING</h3>
         <div class="row">
             <div class="column">
-                <img src="Assets\image\photo_brand_bag.jpeg" alt="Food" onclick="myFunction(this, 'branding-container')">
+                <img src="Assets\image\photo_brand_bag.jpeg" alt="Food" onclick="galleryOpen(this, 'branding-container')">
             </div>
             <div class="column">
-                <img src="Assets\image\photo_brand_sign.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+                <img src="Assets\image\photo_brand_sign.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
             </div>
             <div class="column">
-                <img src="Assets\image\photo_brand_shirt.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+                <img src="Assets\image\photo_brand_shirt.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
             </div>
             <div class="column">
-                <img src="Assets\image\photo_brand_cup.png" alt="Food" onclick="myFunction(this, 'branding-container')">
+                <img src="Assets\image\photo_brand_cup.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
             </div>
 
            
@@ -146,7 +165,7 @@
     <!-- Expanding Image Container for Branding -->
     <div class="container" id="branding-container">
         <span onclick="closeContainer('branding-container')" class="closebtn">&times;</span>
-        <img id="expandedImg3" style="width:100%">
+        <img id="expandedImg3" style="width:60%">
         <div id="imgtext3"></div>
     </div>
 
@@ -173,13 +192,15 @@
     <!-- Expanding Image Container for Social -->
     <div class="container" id="social-container">
         <span onclick="closeContainer('social-container')" class="closebtn">&times;</span>
-        <img id="expandedImg4" style="width:100%">
+        <img id="expandedImg4" style="width:60%">
         <div id="imgtext4"></div>
     </div>
 
 
 </main>
 <script src="GalleryFunction.js"></script>
+    <!-- mobile menu script -->
+    <script src="mobile-menu.js"></script>
 </body>    
 <!-- Footer -->
 <footer>

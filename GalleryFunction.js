@@ -1,4 +1,4 @@
-function myFunction(img, containerId) {
+function galleryOpen(img, containerId) {
     // Get the specific container
     var container = document.getElementById(containerId);
     var expandImg = container.querySelector('img'); // Target the image inside this container

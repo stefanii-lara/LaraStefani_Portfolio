@@ -45,30 +45,6 @@ body {
     text-decoration: underline;
 }
 
-/* Basic styling for the main menu */
-#main-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-#main-menu > li {
-    position: relative;
-}
-
-#main-menu a {
-    text-decoration: none;
-    color: #2C2D41;
-    font-weight: bold;
-    padding: 10px;
-}
-
-#main-menu a:hover {
-    color: #B1C543;
-}
-
 /* Hide the dropdown menu initially */
 .dropdown-menu {
     display: none; /* Initially hidden */
@@ -107,7 +83,7 @@ header {
     align-items: center; /* Centers content vertically */
     position: relative; /* Ensure header adjusts to its content */
     overflow: hidden; /* Prevent overflow issues from negatively positioned elements */
-    padding:50px;
+    padding:30px;
 
 }
 
@@ -157,7 +133,6 @@ header p {
 
 .gallery h3 {
     font-size: 24px;
-    font-weight: 400;
     text-align:center;
 }
 
@@ -191,10 +166,15 @@ header p {
   }
   
   /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
+  .magazine-container {
     position: relative;
-    display: none;
+    display:flex;
+    align-items:center;
+    justify-content: center;
   }
+  #magazine-container img {
+    width: 60%;
+}
   
   /* Expanding image text */
   #imgtext {
@@ -216,9 +196,6 @@ header p {
   }
 
 
-
-
-
 /* Footer */
 footer {
     background-color: #2C2D41;
@@ -226,16 +203,65 @@ footer {
     text-align: center;
     padding: 10px;
 }
-/* Tablet view */
-@media (max-width: 1024px) {
-    /* Tablet-specific styles go here */
+/*mobile menu*/
+#mobile-nav button {
+    background-color: transparent;
+    border: 0;
 }
 
-/* Mobile view */
-@media (max-width: 767px) {
-    /* Mobile-specific styles go here */
+/* Mobile menu container */
+#overlay-menu-container {
+    position: fixed; /* Keep menu fixed to match header behavior */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none; /* Hidden by default */
+}
+/* Adjust the mobile menu itself */
+#overlay-menu {
+    background-color: #98a432;
+    width: 100%; /* Full width for menu */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+#overlay-menu menu {
+    padding-left: 0;
+    list-style-type:none;
+}
+#overlay-menu menu li a {
+    font-size:28px;
+    color: #2C2D41;
+    text-decoration: none;
+    font-weight: bold;
+    margin-block:10px;
+    display: inline-block;
 }
 
-html {
-    scroll-behavior: smooth;
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#mobile-nav {
+    display:none;
+    position:fixed;
+    z-index:1000;
+    background-color:#FEF9F9;
+    width: 100%;
+}
+@media (max-width:900px) {
+    #top-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+    main {
+        width: 100%;
+    }
 }

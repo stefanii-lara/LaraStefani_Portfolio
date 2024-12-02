@@ -45,29 +45,7 @@ body {
     text-decoration: underline;
 }
 
-/* Basic styling for the main menu */
-#main-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
 
-#main-menu > li {
-    position: relative;
-}
-
-#main-menu a {
-    text-decoration: none;
-    color: #2C2D41;
-    font-weight: bold;
-    padding: 10px;
-}
-
-#main-menu a:hover {
-    color: #B1C543;
-}
 
 /* Hide the dropdown menu initially */
 .dropdown-menu {
@@ -107,7 +85,7 @@ header {
     align-items: center; /* Centers content vertically */
     position: relative; /* Ensure header adjusts to its content */
     overflow: hidden; /* Prevent overflow issues from negatively positioned elements */
-    padding:50px;
+    padding:30px;
 
 }
 
@@ -211,7 +189,7 @@ a.button:hover {
 /* General Gallery Section Styling */
 .gallery {
     text-align: center;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .gallery h2 {
@@ -225,15 +203,15 @@ a.button:hover {
     display: flex; /* Use Flexbox for horizontal alignment */
     justify-content: space-evenly; /* Add equal space between images */
     align-items: center; /* Center items vertically */
-    gap: 20px; /* Space between the images */
+    gap: 10px; /* Space between the images */
     flex-wrap: nowrap; /* Ensure items stay on one line */
     overflow-y:hidden; /* Enable horizontal scrolling if content overflows */
 }
 
 /* Individual Image Styling */
 .gallery-images img {
-    width: 150px;
-    height: 150px;
+    width: 330px;
+    height: 330px;
     object-fit: cover;
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
@@ -321,74 +299,66 @@ footer {
     text-align: center;
     padding: 10px;
 }
-#mobile-menu-button {
-    display: none;
-}
-/* Tablet side */
-@media (max-width: 1024px) {
-    #mobile-menu-button {
-        display: block;
-    }
-    /* Tablet-specific styles go here */
+/*mobile menu*/
+#mobile-nav button {
+    background-color: transparent;
+    border: 0;
 }
 
-/* Mobile view */
-@media (max-width: 767px) {
-    /* Mobile-specific styles go here */
+/* Mobile menu container */
+#overlay-menu-container {
+    position: fixed; /* Keep menu fixed to match header behavior */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none; /* Hidden by default */
 }
-  
-  img:hover {
-    transform: translateX(150px);
-    opacity: 0;
-    right: 50px;
-  }
-  .overlay-container {
-    /*  we need to set the container's position for position: absolute to work on the overlay  */
-      position: relative;
-       width: 30%;
-      height: 300px;
+/* Adjust the mobile menu itself */
+#overlay-menu {
+    background-color: #98a432;
+    width: 100%; /* Full width for menu */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+#overlay-menu menu {
+    padding-left: 0;
+    list-style-type:none;
+}
+#overlay-menu menu li a {
+    font-size:28px;
+    color: #2C2D41;
+    text-decoration: none;
+    font-weight: bold;
+    margin-block:10px;
+    display: inline-block;
+}
+
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#mobile-nav {
+    display:none;
+    position:fixed;
+    z-index:1000;
+    background-color:#FEF9F9;
+    width: 100%;
+}
+@media (max-width:900px) {
+    #top-nav {
+        display: none;
     }
-    
-    .overlay-container img {
-    /*  by setting the height and width to 100%, and object-fit to cover, the image will take up the full height and width of the parent without distorting itself  */
-     width: 100%;
-    height: 100%;
-    object-fit: cover;
-      
+    #mobile-nav {
+        display: block;
     }
-    
-    .overlay {
-    /*  setting position: absolute will take the content outside of the normal flow of the document, and position it relative to the cloest positioned ancestor(the article element) */
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    /*  by setting width and height too 100%, we are making it take up the full width and height of its parent  */
-      width: 100%;
-      height: 100%;
-    /*  this is setting the background to black with a opacity of 80%   */
-      background-color: rgba(0,0,0,.8);
-      
-    /* giving the text a white color   */
-      color: #fff;
-    /*  using the following 3 properties positions the text in the vertical center of the container  */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    /*  If we want the overlay to transition to full opacity on hover, we need to set the default opacity to 0, and give it a transition property  */
-      opacity: 0;
-      transition: opacity, .5s;
-      
+    main {
+        width: 100%;
     }
-    
-    /* on hover, make the opacity 100% */
-    .overlay:hover {
-      
-      opacity: 1;
-    }
-    /* making both the paragraph and the h2 centered horizontally */
-    .overlay p, .overlay h2 {
-      text-align: center;
-    }
-    
+}
+
