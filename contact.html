@@ -56,10 +56,10 @@
         <li class="dropdown">
             <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
-                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
-                <li><a href="Portfolio.html#branding">BRANDING</a></li>
-                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#gallery-magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#gallery-photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#gallery-branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#gallery-social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -67,7 +67,7 @@
 </nav>
 
 <header>
-    <header class="header-container">
+    <header data-aos="fade-up" class="header-container">
         <h1>Contact me!</h1>
         <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
     </header>
@@ -96,11 +96,11 @@
 </main>
 
 
-<section id="newsletter-subscribe">
+<section data-aos="fade-right"
+data-aos-anchor-placement="right-left" id="newsletter-subscribe">
     <h2>Subscribe to our newsletter!</h2>
     <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
     <form>
-        <label for="newsletter" class="sr-only">Enter Your Email</label>
         <input id="newsletter" type="email" placeholder="example@website.com" required>
         <button type="submit">Subscribe</button>
     </form>
@@ -113,6 +113,11 @@
 
     <!-- mobile menu script -->
     <script src="mobile-menu.js"></script>
+
+          <!-- animate on scroll -->
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script src="AOS.js"></script>
     
 </body>
 </html>

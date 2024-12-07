@@ -56,10 +56,10 @@
         <li class="dropdown">
             <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
-                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
-                <li><a href="Portfolio.html#branding">BRANDING</a></li>
-                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#gallery-magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#gallery-photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#gallery-branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#gallery-social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -76,131 +76,186 @@
     </header>
 
 <main>
-    <!-- Magazines Section -->
-    <section id="magazines" class="gallery">
-        <h3>MAGAZINES</h3>
-        <div class="row">
-            <div class="column">
-                <img src="Assets/image/photo_hikes.png" alt="Hiking" onclick="galleryOpen(this, 'magazine-container');">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_football.png" alt="Football" onclick="galleryOpen(this, 'magazine-container');">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="galleryOpen(this, 'magazine-container');">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_chefery.png" alt="Chefery" onclick="galleryOpen(this, 'magazine-container');">
-            </div>
+<!-- Magazines Section -->
+<section id="gallery-magazines">
+    <h3>MAGAZINES</h3>
+    <div id="splide-gallery-magazines" class="splide" aria-label="Magazines">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="#magazine-overlay1" rel="modal:open"><img src="Assets/image/photo_chefery.png" alt="Magazine Cover 1"></a>
+                    <div id="magazine-overlay1" class="modal">
+                        <img data-aos="fade-in"src="Assets/image/photo_chefery.png" alt="Magazine Cover 1">
+                        <p>Caption 1</p>
+                </li>
+                <li class="splide__slide">
+                    <a href="#magazine-overlay2" rel="modal:open"><img src="Assets/image/photo_hikes.png" alt="Magazine Cover 2"></a>
+                    <div id="magazine-overlay2" class="modal">
+                        <img data-aos="fade-in"src="Assets/image/photo_hikes.png" alt="Magazine Cover 2">
+                        <p>Caption 2</p>
+                </li>
+                <li class="splide__slide">
+                    <a href="#magazine-overlay3" rel="modal:open"><img src="Assets/image/photo_football.png" alt="Magazine Cover 3"></a>
+                    <div id="magazine-overlay3" class="modal">
+                        <img data-aos="fade-in"src="Assets/image/photo_football.png" alt="Magazine Cover 3">
+                    <p>Caption 3</p>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Expanding Image Container for Magazines -->
-    <div class="container" id="magazine-container">
-        <span onclick="closeContainer('magazine-container')" class="closebtn">&times;</span>
-        <img id="expandedImg1">
-        <div id="imgtext1"></div>
     </div>
+</section>
 
-    <!-- Photography Section -->
-    <section id="photography" class="gallery">
-        <h3>PHOTOGRAPHY</h3>
-        <div class="row">
-            <div class="column">
-                <img src="Assets/image/photo_food.jpeg" alt="Food" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_wine.jpeg" alt="Wine" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_grass.jpeg" alt="Grass" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_kyle.jpeg" alt="Kyle" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_mansion.jpeg" alt="Mansion" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_girl.jpeg" alt="Girl" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="galleryOpen(this, 'photography-container')">
-            </div>
-            <div class="column">
-                <img src="Assets/image/photo_dulce.jpeg" alt="Dulce" onclick="galleryOpen(this, 'photography-container')">
-            </div>
+<section id="gallery-photography">
+    <h3>PHOTOGRAPHY</h3>
+    <div id="splide-gallery-photography" class="splide" aria-label="Photography">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="#photography-overlay1" rel="modal:open"><img src="Assets/image/photo_food.jpeg" alt="Food"></a>
+                    <div id="photography-overlay1" class="modal">
+                        <img src="Assets/image/photo_food.jpeg" alt="Food">
+                        <p>Caption 1</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#photography-overlay2" rel="modal:open"><img src="Assets/image/photo_wine.jpeg" alt="Wine"></a>
+                    <div id="photography-overlay2" class="modal">
+                        <img src="Assets/image/photo_wine.jpeg" alt="Wine">
+                        <p>Caption 2</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#photography-overlay3" rel="modal:open"><img src="Assets/image/photo_grass.jpeg" alt="Grass"></a>
+                    <div id="photography-overlay3" class="modal">
+                        <img src="Assets/image/photo_grass.jpeg" alt="Grass">
+                        <p>Caption 3</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#photography-overlay4" rel="modal:open"><img src="Assets/image/photo_kyle.jpeg" alt="Kyle"></a>
+                    <div id="photography-overlay4" class="modal">
+                        <img src="Assets/image/photo_kyle.jpeg" alt="Kyle">
+                        <p>Caption 4</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#photography-overlay5" rel="modal:open"><img src="Assets/image/photo_dulce.jpeg" alt="Kyle"></a>
+                    <div id="photography-overlay5" class="modal">
+                        <img src="Assets/image/photo_kyle.jpeg" alt="Kyle">
+                        <p>Caption 4</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#photography-overlay4" rel="modal:open"><img src="Assets/image/photo_mansion.jpeg" alt="Kyle"></a>
+                    <div id="photography-overlay4" class="modal">
+                        <img src="Assets/image/photo_kyle.jpeg" alt="Kyle">
+                        <p>Caption 4</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Expanding Image Container for Photography -->
-    <div class="container" id="photography-container">
-        <span onclick="closeContainer('photography-container')" class="closebtn">&times;</span>
-        <img id="expandedImg2" style="width:60%">
-        <div id="imgtext2"></div>
     </div>
+</section>
 
 
-    <!-- Branding Section -->
-    <section id="branding" class="gallery">
-        <h3>BRANDING</h3>
-        <div class="row">
-            <div class="column">
-                <img src="Assets\image\photo_brand_bag.jpeg" alt="Food" onclick="galleryOpen(this, 'branding-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_brand_sign.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_brand_shirt.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_brand_cup.png" alt="Food" onclick="galleryOpen(this, 'branding-container')">
-            </div>
-
-           
+<section id="gallery-branding">
+    <h3>BRANDING</h3>
+    <div id="splide-gallery-branding" class="splide" aria-label="Branding">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="#branding-overlay1" rel="modal:open"><img src="Assets/image/photo_brand_bag.jpeg" alt="Brand Bag"></a>
+                    <div id="branding-overlay1" class="modal">
+                        <img src="Assets/image/photo_brand_bag.jpeg" alt="Brand Bag">
+                        <p>Caption 1</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#branding-overlay2" rel="modal:open"><img src="Assets/image/photo_brand_sign.png" alt="Brand Sign"></a>
+                    <div id="branding-overlay2" class="modal">
+                        <img src="Assets/image/photo_brand_sign.png" alt="Brand Sign">
+                        <p>Caption 2</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#branding-overlay3" rel="modal:open"><img src="Assets/image/photo_brand_shirt.png" alt="Brand Shirt"></a>
+                    <div id="branding-overlay3" class="modal">
+                        <img src="Assets/image/photo_brand_shirt.png" alt="Brand Shirt">
+                        <p>Caption 3</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#branding-overlay4" rel="modal:open"><img src="Assets/image/photo_brand_cup.png" alt="Brand Cup"></a>
+                    <div id="branding-overlay4" class="modal">
+                        <img src="Assets/image/photo_brand_cup.png" alt="Brand Cup">
+                        <p>Caption 4</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <!-- Expanding Image Container for Branding -->
-    <div class="container" id="branding-container">
-        <span onclick="closeContainer('branding-container')" class="closebtn">&times;</span>
-        <img id="expandedImg3" style="width:60%">
-        <div id="imgtext3"></div>
     </div>
+</section>
 
-
-
-    <!-- Social Media Section -->
-    <section id="social-media" class="gallery">
-        <h3>SOCIAL MEDIA</h3>
-        <div class="row">
-            <div class="column">
-                <img src="Assets\image\photo_social_acai.png" alt="Social" onclick="myFunction(this, 'social-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_social_acai2.png" alt="Social" onclick="myFunction(this, 'social-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_social_juice.png" alt="Social" onclick="myFunction(this, 'social-container')">
-            </div>
-            <div class="column">
-                <img src="Assets\image\photo_social_acai.png" alt="Social" onclick="myFunction(this, 'social-container')">
-            </div>
-    </section>
-
-    <!-- Expanding Image Container for Social -->
-    <div class="container" id="social-container">
-        <span onclick="closeContainer('social-container')" class="closebtn">&times;</span>
-        <img id="expandedImg4" style="width:60%">
-        <div id="imgtext4"></div>
+<section id="gallery-social-media">
+    <h3>SOCIAL MEDIA</h3>
+    <div id="splide-gallery-social-media" class="splide" aria-label="Social Media">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="#social-media-overlay1" rel="modal:open"><img src="Assets/image/photo_social_acai.png" alt="Social Acai"></a>
+                    <div id="social-media-overlay1" class="modal">
+                        <img src="Assets/image/photo_social_acai.png" alt="Social Acai">
+                        <p>Caption 1</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#social-media-overlay2" rel="modal:open"><img src="Assets/image/photo_social_acai2.png" alt="Social Acai 2"></a>
+                    <div id="social-media-overlay2" class="modal">
+                        <img src="Assets/image/photo_social_acai2.png" alt="Social Acai 2">
+                        <p>Caption 2</p>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <a href="#social-media-overlay3" rel="modal:open"><img src="Assets/image/photo_social_juice.png" alt="Social Juice"></a>
+                    <div id="social-media-overlay3" class="modal">
+                        <img src="Assets/image/photo_social_juice.png" alt="Social Juice">
+                        <p>Caption 3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
+</section>
+
+
+
 
 
 </main>
-<script src="GalleryFunction.js"></script>
+
     <!-- mobile menu script -->
     <script src="mobile-menu.js"></script>
+
+   <!-- Remember to include jQuery :) -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+   <!-- jQuery Modal -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- splide js-->
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+<script src="SplideGalleryFunction.js"></script>
+
+      <!-- animate on scroll -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="AOS.js"></script>
 </body>    
 <!-- Footer -->
 <footer>

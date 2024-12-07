@@ -57,10 +57,10 @@
         <li class="dropdown">
             <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
-                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
-                <li><a href="Portfolio.html#branding">BRANDING</a></li>
-                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#gallery-magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#gallery-photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#gallery-branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#gallery-social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -68,9 +68,9 @@
 </nav>
 
 <header>
-<header class="header-container">
-    <h1>Stefani</h1>
-    <h2>studios</h2>
+<header data-aos="fade-up" class="header-container">
+    <h1 >Stefani</h1>
+    <h2 >studios</h2>
     <img src="Assets/image/logo_line.png" alt="Stefani Studios Line" class="header-line">
 </header>
 </header>
@@ -80,7 +80,10 @@
         <div class="feature-content">
             <h3>Transforming Ideas into Reality</h3>
             <p>Welcome to my portfolio! My projects range from magazine and book cover designs to social media graphics and branding solutions. Check out my blog to learn more about my process.</p>
-            <div class="buttons">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" class="buttons">
                 <a href="Portfolio.html" class="button">PORTFOLIO</a>
                 <a href="Contact.html" class="button">CONTACT</a>
             </div>
@@ -92,9 +95,9 @@
     <h2>Gallery</h2>
     <div class="gallery-images">
         <!-- Image 1: Magazine -->
-        <article class="overlay-container">
+        <article data-aos="fade-up" class="overlay-container">
             <img src="Assets\image\photo_chefery.png" alt="Gallery showcasing a magazine cover with green vegetables and recipe details">
-        <a href="#" aria-label="View more about Photography">
+        <a href="Portfolio.html#gallery-magazines" aria-label="View more about Photography">
                 <div class="overlay">
                     <h2>Magazine</h2>
                 </div>
@@ -102,9 +105,9 @@
         </article>
 
         <!-- Image 2: Photography -->
-        <article class="overlay-container">
+        <article data-aos="fade-up" class="overlay-container">
             <img src="Assets\image\photo_food.jpeg" alt="Gallery showing still life with fruits, cups, and wine">
-            <a href="#" aria-label="View more about Still Life Photography">
+            <a href="Portfolio.html#gallery-photography" aria-label="View more about Still Life Photography">
                 <div class="overlay">
                     <h2>Photography</h2>
                 </div>
@@ -112,18 +115,18 @@
         </article>
 
         <!-- Image 3: Branding -->
-        <article class="overlay-container">
+        <article data-aos="fade-up" class="overlay-container">
             <img src="Assets\image\photo_brand_menu.png" alt="Gallery showcasing a coffee shop menu design with drinks and bites">
-            <a href="#" aria-label="View more about Menu Design">
+            <a href="Portfolio.html#gallery-branding" aria-label="View more about Menu Design">
                 <div class="overlay">
                     <h2>Branding</h2>
                 </div>
             </a>
         </article>
         <!-- Image 4: Social Media -->
-                <article class="overlay-container">
+                <article data-aos="fade-up" class="overlay-container">
                     <img src="Assets\image\photo_social_acai2.png" alt="Gallery showcasing a recipe book open with a colorful layout of dishes">
-                    <a href="#" aria-label="View more about Recipe Design">
+                    <a href="Portfolio.html#gallery-social-media" aria-label="View more about Recipe Design">
                         <div class="overlay">
                             <h2>Social Media</h2>
                         </div>
@@ -131,11 +134,11 @@
                  </div>
 </section>
 
-    <section id="newsletter-subscribe">
+    <section data-aos="fade-right"
+     data-aos-anchor-placement="right-left" id="newsletter-subscribe">
         <h2>Subscribe to our newsletter!</h2>
         <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
         <form>
-            <label for="newsletter" class="sr-only">Enter Your Email</label>
             <input id="newsletter" type="email" placeholder="example@website.com" required>
             <button type="submit">Subscribe</button>
         </form>
@@ -150,5 +153,9 @@
     <!-- mobile menu script -->
     <script src="mobile-menu.js"></script>
 
+      <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="AOS.js"></script>
 </body>
 </html>

@@ -4,7 +4,6 @@ body {
     background-color: #FEF9F9;
     margin: 0;
     padding: 0;
-    color: #250B3A;
 }
 
 /* Top Navigation Styling */
@@ -14,8 +13,8 @@ body {
     left: 0;
     width: 100%;
     background-color: #FEF9F9;
-    padding: 20px 0; /* Remove horizontal padding */
-    z-index: 1000; /* Ensure the nav is above other content */
+    padding: 20px 0;
+    z-index: 1000; /* nav is above other content */
     display: flex;
     justify-content: center;
 }
@@ -42,14 +41,13 @@ body {
 
 #main-menu a:hover {
     color: #B1C543;
-    text-decoration: underline;
 }
 
 /* Hide the dropdown menu initially */
 .dropdown-menu {
-    display: none; /* Initially hidden */
+    display: none;
     position: absolute;
-    top: 100%; /* Position it below the main item */
+    top: 100%;
     left: 0;
     background-color: #EF6D58;
     list-style: none;
@@ -79,26 +77,26 @@ header {
     background-color: #2C2D41;
     color: #B1C543;
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    position: relative; /* Ensure header adjusts to its content */
-    overflow: hidden; /* Prevent overflow issues from negatively positioned elements */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     padding:30px;
 
 }
 
 .header-container {
     display: flex;
-    flex-direction: column; /* Stack headers vertically */
-    align-items: flex-start; /* Align headers to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 header h1 {
     font-family: 'Jua', sans-serif;
     font-size: 120px;
-    margin: 0 0 10px 0; /* Consistent spacing */
+    margin: 0 0 10px 0;
     text-align: center;
-    position: relative; /* Needed for relative alignment */
+    position: relative;
     justify-content: center;
 
 }
@@ -107,38 +105,37 @@ header h2 {
     font-family: 'Englebert', sans-serif;
     font-size: 60px;
     font-weight: 400;
-    margin: 0; /* Reset margins for consistent layout */
+    margin: 0;
     text-align: center;
-    position: absolute; /* Allows precise positioning */
-    top: 160px; /* Adjust to align with "Stefani" */
-    left: 260px;
+    position: absolute;
+    top: 150px;
+    left: 250px;
 }
 
 header p {
     text-align: left;
-    width: 35%; /* Adjust width for better layout */
-    margin: 50px 0; /* Add spacing below the paragraph */
+    width: 35%; 
+    margin: 50px 0;
 }
 
 .header-line {
     width: 200px;
     height: auto;
     margin:0;
-    align-self: flex-start; /* Align the line to the left */
+    align-self: flex-start;
     position:absolute;
-    top:150px;
-    left:50px;
+    top:140px;
+    left:35px;
 }
 
-
-.gallery h3 {
+.gallery-magazines h3 {
     font-size: 24px;
-    text-align:center;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/* Four equal columns that floats next to each other */
 * {
     box-sizing: border-box;
+    text-align: center;
   }
 .column {
     float: left;
@@ -165,7 +162,7 @@ header p {
     clear: both;
   }
   
-  /* The expanding image container (positioning is needed to position the close button and the text) */
+  /* The expanding image container */
   .magazine-container {
     position: relative;
     display:flex;
@@ -174,6 +171,14 @@ header p {
   }
   #magazine-container img {
     width: 60%;
+}
+.modal {
+    max-width: 100% !important;
+    width: auto !important;
+}
+.modal img {
+    /* view height ; vw = view width*/
+    height: 75vh;
 }
   
   /* Expanding image text */
@@ -195,6 +200,30 @@ header p {
     cursor: pointer;
   }
 
+  .splide__slide img {
+    width: 100%; 
+    height: 30rem; 
+    object-fit: cover; 
+    max-width: none; 
+    padding: 10px;
+    border-radius: 10px;
+}
+#splide-gallery-magazines .splide__slide img {
+    width: auto; 
+    height: 40rem; 
+    object-fit: cover; 
+    max-width: none; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.splide__slide{
+    margin:10px;
+}
+  #image-carousel {
+    width: 60%;
+    margin: 10px;
+  }
 
 /* Footer */
 footer {
@@ -211,19 +240,19 @@ footer {
 
 /* Mobile menu container */
 #overlay-menu-container {
-    position: fixed; /* Keep menu fixed to match header behavior */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
-    display: none; /* Hidden by default */
+    display: none;
 }
 /* Adjust the mobile menu itself */
 #overlay-menu {
     background-color: #98a432;
-    width: 100%; /* Full width for menu */
+    width: 100%;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -260,6 +289,7 @@ footer {
     }
     #mobile-nav {
         display: block;
+        text-align: left;
     }
     main {
         width: 100%;

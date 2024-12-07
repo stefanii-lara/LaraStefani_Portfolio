@@ -56,10 +56,10 @@
         <li class="dropdown">
             <a href="Portfolio.html">PORTFOLIO</a>
             <ul class="dropdown-menu">
-                <li><a href="Portfolio.html#magazines">MAGAZINES</a></li>
-                <li><a href="Portfolio.html#photography">PHOTOGRAPHY</a></li>
-                <li><a href="Portfolio.html#branding">BRANDING</a></li>
-                <li><a href="Portfolio.html#social-media">SOCIAL MEDIA</a></li>
+                <li><a href="Portfolio.html#gallery-magazines">MAGAZINES</a></li>
+                <li><a href="Portfolio.html#gallery-photography">PHOTOGRAPHY</a></li>
+                <li><a href="Portfolio.html#gallery-branding">BRANDING</a></li>
+                <li><a href="Portfolio.html#gallery-social-media">SOCIAL MEDIA</a></li>
             </ul>
         </li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -83,8 +83,8 @@
     <button class="tablinks" onclick="openTab(event, 'Coming Soon')">Coming Soon</button>
   </div>
    <!-- Tab content -->
-<div id="Intro" class="tabcontent">
-    <section class="introduction" id="introduction">
+<div  id="Intro" class="tabcontent">
+    <section data-aos="fade-in" class="introduction" id="introduction">
         <div class="intro-container">
             <img src="Assets/image/Lara-photo.png" alt="Lara's Portrait wearing white while posing in front of the beach" class="intro-image">
             <div class="intro-text">
@@ -107,9 +107,9 @@
         <!-- Image 1: Magazine -->
         <article class="overlay-container">
             <img src="Assets\image\photo_chefery.png" alt="Gallery showcasing a magazine cover with green vegetables and recipe details">
-            <a href="Portfolio.html#magazines" aria-label="View more about Photography">
+            <a href="Portfolio.html#gallery-magazines" aria-label="View more about Photography">
                 <div class="overlay">
-                    <h2>Magazine</h2>
+                    <h3>Magazine</h3>
                 </div>
             </a>
         </article>
@@ -117,9 +117,9 @@
         <!-- Image 2: Photography -->
         <article class="overlay-container">
             <img src="Assets\image\photo_food.jpeg" alt="Gallery showing still life with fruits, cups, and wine">
-            <a href="Portfolio.html#photography" aria-label="View more about Still Life Photography">
+            <a href="Portfolio.html#gallery-photography" aria-label="View more about Still Life Photography">
                 <div class="overlay">
-                    <h2>Photography</h2>
+                    <h3>Photography</h3>
                 </div>
             </a>
         </article>
@@ -127,18 +127,18 @@
         <!-- Image 3: Branding -->
         <article class="overlay-container">
             <img src="Assets\image\photo_brand_menu.png" alt="Gallery showcasing a coffee shop menu design with drinks and bites">
-            <a href="Portfolio.html#branding" aria-label="View more about Menu Design">
+            <a href="Portfolio.html#gallery-branding" aria-label="View more about Menu Design">
                 <div class="overlay">
-                    <h2>Branding</h2>
+                    <h3>Branding</h3>
                 </div>
             </a>
         </article>
         <!-- Image 4: Social Media -->
                 <article class="overlay-container">
                     <img src="Assets\image\photo_social_acai2.png" alt="Gallery showcasing a recipe book open with a colorful layout of dishes">
-                    <a href="Portfolio.html#social-media" aria-label="View more about Recipe Design">
+                    <a href="Portfolio.html#gallery-social-media" aria-label="View more about Recipe Design">
                         <div class="overlay">
-                            <h2>Social Media</h2>
+                            <h3>Social Media</h3>
                         </div>
                     </a>
                  </div>
@@ -146,13 +146,21 @@
   </div>
   
   <div id="Recent Posts" class="tabcontent">
-    <h3>Tokyo</h3>
+    <h3>Recent Post 1 Nov 2024</h3>
     <p>Tokyo is the capital of Japan.</p>
+    <h3>Oct 2024</h3>
+    <p>What else is going on?</p>
+    <h3>Sept 2024</h3>
+    <p>Just working on my website project!</p>
+    <h3>Aug 2024</h3>
+    <p>Not much going on, just enjoying the summer</p>
+    <h3>July 2024</h3>
+    <p>I can't wait until fall when the leaves will change</p>
   </div>
 
   <div id="Coming Soon" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3>More content coming soon!</h3>
+    <p>Stay tuned, subscribe to my newsletter below to see more upcoming content!</p>
   </div>
 
 
@@ -160,11 +168,11 @@
         
 
 <!-- newsletter-subscribe -->
-        <section id="newsletter-subscribe">
+        <section data-aos="fade-right"
+        data-aos-anchor-placement="right-left" id="newsletter-subscribe">
             <h2>Subscribe to our newsletter!</h2>
             <p class="newsletter-text">Subscribe to our weekly newsletter, sent every Sunday!</p>
             <form>
-                <label for="newsletter" class="sr-only">Enter Your Email</label>
                 <input id="newsletter" type="email" placeholder="example@website.com" required>
                 <button type="submit">Subscribe</button>
             </form>
@@ -175,7 +183,7 @@
 <h2>Related Articles</h2>
 <section class="related-articles" id="related-articles">
     <a href="https://www.creativeboom.com/features/modernist-graphic-design-in-britain-1945-1980/" class="related-article-link" target="_blank">
-        <div class="related-article">
+        <div data-aos="fade-up" class="related-article">
             <img src="Assets/image/news2.jpg" alt="Yellow book cover: 'Modernist Graphic Design in Britain 1945-1980'" class="article-image">
             <h3>New book celebrates the lost pioneers of British graphic design</h3>
             <p>7 November 2024</p>
@@ -183,7 +191,7 @@
         </div>
     </a>
     <a href="https://www.creativeboom.com/features/the-biggest-challenges-for-design-studios-in-2025-and-how-leaders-plan-to-tackle-them/" class="related-article-link" target="_blank">
-        <div class="related-article">
+        <div data-aos="fade-up" class="related-article">
             <img src="Assets/image/news3.jpeg" alt="A man sitting at a table with a notebook and coffee cup" class="article-image">
             <h3>The biggest challenges for design studios in 2025 written by Tom May</h3>
             <p>6 November 2024</p>
@@ -191,7 +199,7 @@
         </div>
     </a>
     <a href="https://www.creativeboom.com/features/will-ai-replace-illustrators/" class="related-article-link" target="_blank">
-        <div class="related-article">
+        <div data-aos="fade-up" class="related-article">
             <img src="Assets/image/news4.png" alt="Illustration of a person surrounded by colorful AI elements" class="article-image">
             <h3>Is AI really coming for your illustration career? An industry expert weighs in</h3>
             <p>6 November 2024</p>
@@ -199,7 +207,7 @@
         </div>
     </a>
     <a href="https://www.creativeboom.com/resources/typokompanii-foundry/" class="related-article-link" target="_blank">
-        <div class="related-article">
+        <div data-aos="fade-up" class="related-article">
             <img src="Assets/image/news5.jpg" alt="Team of people working in a creative studio surrounded by designs and books" class="article-image">
             <h3>Meet Tüpokompanii, the type foundry redefining design through 'mistakes'</h3>
             <p>23 October 2024</p>
@@ -212,6 +220,12 @@
 <script src="openTab.js"></script>
     <!-- mobile menu script -->
     <script src="mobile-menu.js"></script>
+
+      <!-- animate on scroll -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="AOS.js"></script>
+
 </body>
 <!-- Footer -->
 <footer>
